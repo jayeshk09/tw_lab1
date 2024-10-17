@@ -31,7 +31,7 @@ int main()
      {
         Product += vector1[i] * vector2[i];
     }
-
+ //change in line 34 of newbranch
     cout << "The dot product is: " << Product << endl;
 
     return 0;
