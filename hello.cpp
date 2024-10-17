@@ -26,6 +26,7 @@ int main() {
     for (int i = 0; i < n; ++i) {
         dotProduct += vector1[i] * vector2[i];
     }
+    // commit in the main version to fix the code
 
     cout << "The dot product is: " << dotProduct << endl;
 
