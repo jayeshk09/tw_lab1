@@ -31,7 +31,7 @@ int main()
      {
         Product += vector1[i] * vector2[i];
     }
-    // commit in the main version to fix the cod
+    // change for conflic in line 34 master branch
 
     cout << "The dot product is: " << Product << endl;
 
