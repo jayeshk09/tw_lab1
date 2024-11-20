@@ -68,6 +68,64 @@ Below is a diagram illustrating the dot product of two vectors:
 > [Note]
 > This can happen if the angle between the vectors exceeds 90 degrees.
 
+The following table shows examples of two vectors and their corresponding dot products.
+
+| Vector A          | Vector B          | Dot Product (A . B)                                  |
+|-------------------|-------------------|------------------------------------------------------|
+| (1, 2, 3)         | (4, -5, 6)        | (1 * 4) + (2 * -5) + (3 * 6) = 4 - 10 + 18 = 12     |
+| (2, 3, 4)         | (5, 6, 7)         | (2 * 5) + (3 * 6) + (4 * 7) = 10 + 18 + 28 = 56     |
+| (-1, 0, 1)        | (0, 1, -1)        | (-1 * 0) + (0 * 1) + (1 * -1) = 0 + 0 - 1 = -1      |
+
+---
+
+# Code for dot product
+## C++ implementation
+```cpp
+#include <iostream>
+#include <vector>
+//here is the comment
+using namespace std;
+
+int main() 
+{
+    int n;
+
+    cout << "enter the size of ";
+    cin >> n;
+
+    vector<int> vector1(n);
+    vector<int> vector2(n);
+
+    cout << "enter elements of the r:";
+    for (int i = 0; i < n; ++i)
+     {
+        cin >> vector1[i];
+    }
+   // stash with comments
+    cout << "Enter elements of the second vector:"<<endl;
+    for (int i = 0; i < n; ++i)
+     {
+        cin >> vector2[i]; 
+    }
+   // this is new change 
+   int j;
+    int Product = 0;
+    for (int i = 0; i < n; ++i)
+     {
+        Product += vector1[i] * vector2[i];
+    }
+    // change for conflic in line 34 master branch
+
+    cout << "The dot product is: " << Product << endl;
+
+    return 0;
+    // new change for github push
+}
+
+```
+
+
+
 # Footnotes example
 ### Explanation of the Dot Product
 kk
@@ -89,4 +147,6 @@ Check out the section on [Dot Product Explanation](https://en.wikipedia.org/wiki
 For additional reading, visit the [Dot Product](https://en.wikipedia.org/wiki/Dot_product) section on Wikipedia.  
 
 ---
+
+
 
