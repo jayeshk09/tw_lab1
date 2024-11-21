@@ -23,10 +23,7 @@ The **vector dot product** is a fundamental operation in linear algebra used to 
 
 ### Geometric Interpretation  
 
-The **dot product** can also be represented geometrically:  
-```
-u ⋅ v = ||u|| ||v|| cos(θ)
-```
+
 
 Here:  
 - `||u||` and `||v||` are the magnitudes of vectors `u` and `v`, respectively.  
